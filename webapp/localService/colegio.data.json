@@ -1,0 +1,130 @@
+{
+    "VisitasB":[
+        {
+			"Codigo": "HT-1000",
+			"Descripcion": "Escuela",
+			"Estatus": "Activa",
+			"Componente": "1",
+			"Grupos": "2",
+			"Colegio": "Isidro Ramirez",
+			"Fecha Plan": "Dec 18, 2024",
+			"Fecha": "Dec 18, 2024",
+			"Fecha Cierre": "Dec 18, 2024",
+            "Imagen": "https://w7.pngwing.com/pngs/27/14/png-transparent-school-education-college-academi-angle-class-logo-thumbnail.png"
+			
+		},
+        {
+            "Codigo": "HT-1002",
+            "Descripcion": "Renovación del laboratorio de ciencias",
+            "Estatus": "Activa",
+            "Componente": "Adquisición de equipos",
+            "Grupos": 1,
+            "Colegio": "Isidro Ramirez",
+            "Fecha Plan": "Dec 18, 2024",
+            "Fecha": "Dec 18, 2024",
+            "Fecha Cierre": "Dec 18, 2024",
+            "Imagen": "https://w7.pngwing.com/pngs/27/14/png-transparent-school-education-college-academi-angle-class-logo-thumbnail.png"
+        }, 
+        {   "Codigo": "HT-1003", 
+            "Descripcion": "Construcción de biblioteca", 
+            "Estatus": "Pendiente", 
+            "Componente": "Infraestructura", 
+            "Grupos": 3, 
+            "Colegio": "San Juan Bautista", 
+            "Fecha Plan": "Jan 10, 2025", 
+            "Fecha": "Jan 10, 2025", 
+            "Fecha Cierre": "Feb 20, 2025",
+            "Imagen": "https://w7.pngwing.com/pngs/27/14/png-transparent-school-education-college-academi-angle-class-logo-thumbnail.png"
+        }, 
+        { 
+            "Codigo": "HT-1004", 
+            "Descripcion": "Instalación de paneles solares", 
+            "Estatus": "En Progreso", 
+            "Componente": "Energía", 
+            "Grupos": 2, 
+            "Colegio": "Nuestra Señora del Carmen", 
+            "Fecha Plan": "Feb 15, 2025", 
+            "Fecha": "Feb 15, 2025", 
+            "Fecha Cierre": "Mar 30, 2025",
+            "Imagen": "https://w7.pngwing.com/pngs/27/14/png-transparent-school-education-college-academi-angle-class-logo-thumbnail.png"
+        }, 
+        {   
+            "Codigo": "HT-1005", 
+            "Descripcion": "Mejora del sistema de agua", 
+            "Estatus": "Activa", 
+            "Componente": "Infraestructura", 
+            "Grupos": 1, 
+            "Colegio": "Santa Teresa", 
+            "Fecha Plan": "Mar 01, 2025", 
+            "Fecha": "Mar 01, 2025", 
+            "Fecha Cierre": "Apr 10, 2025",
+            "Imagen": "https://w7.pngwing.com/pngs/27/14/png-transparent-school-education-college-academi-angle-class-logo-thumbnail.png" 
+        }, 
+        { 
+            "Codigo": "HT-1006", 
+            "Descripcion": "Adquisición de computadoras", 
+            "Estatus": "Pendiente", 
+            "Componente": "Tecnología", 
+            "Grupos": 1, 
+            "Colegio": "San Ignacio de Loyola", 
+            "Fecha Plan": "Apr 15, 2025", 
+            "Fecha": "Apr 15, 2025", 
+            "Fecha Cierre": "May 25, 2025",
+            "Imagen": "https://w7.pngwing.com/pngs/27/14/png-transparent-school-education-college-academi-angle-class-logo-thumbnail.png" 
+        }, 
+        { 
+            "Codigo": "HT-1007", 
+            "Descripcion": "Renovación del área de deportes", 
+            "Estatus": "En Progreso", 
+            "Componente": "Infraestructura", 
+            "Grupos": 4, 
+            "Colegio": "Colegio del Sagrado Corazón", 
+            "Fecha Plan": "May 05, 2025", 
+            "Fecha": "May 05, 2025", 
+            "Fecha Cierre": "Jun 20, 2025",
+            "Imagen": "https://w7.pngwing.com/pngs/27/14/png-transparent-school-education-college-academi-angle-class-logo-thumbnail.png"
+        }
+    ],
+    "Estatus":[
+        {"key":0,"text":"Activa"},
+        {"key":1,"text":"Inactiva"},
+        {"key":2,"text":"Pendiente"},
+        {"key":3,"text":"En Progreso"}
+
+
+        
+    ],
+    "Componente":[
+        {"key":0,"text":"1"},
+        {"key":1,"text":"2"},
+        {"key":2,"text":"3"},
+        {"key":3,"text":"4"},
+        {"key":4,"text":"5"},
+        {"key":5,"text":"6"},
+        {"key":6,"text":"7"},
+        {"key":7,"text":"8"},
+        {"key":8,"text":"9"},
+        {"key":9,"text":"10"}
+
+    ],
+    "Grupos":[
+        {"key":0,"text":"1"},
+        {"key":1,"text":"2"},
+        {"key":2,"text":"3"},
+        {"key":3,"text":"4"},
+        {"key":4,"text":"5"},
+        {"key":5,"text":"6"},
+        {"key":6,"text":"7"},
+        {"key":7,"text":"8"},
+        {"key":8,"text":"9"},
+        {"key":9,"text":"10"}
+    ],
+    "Colegio":[
+        {"key":0,"text":"Isidro Ramirez"},
+        {"key":1,"text":"José Castro"},
+        {"key":2,"text":"Santiago Moreno"},
+        {"key":3,"text":"Eduardo Pineda"},
+        {"key":4,"text":"Juan Perez"},
+        {"key":5,"text":"Maria Castro"}
+    ]
+}

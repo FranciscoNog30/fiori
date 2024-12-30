@@ -1,0 +1,91 @@
+<mvc:View xmlns:uxap="sap.uxap" 
+    controllerName="project2.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form">
+    
+    <Page navButtonPress="onRegresar" showNavButton="true" id="_IDGenPage" title="Detail">
+    <content>
+        <uxap:ObjectPageLayout id="ObjectPageLayout"
+					 showTitleInHeaderContent="true"
+					alwaysShowContentHeader="false"
+					preserveHeaderStateOnScroll="false"
+					headerContentPinnable="true"
+					isChildPage="true"
+					upperCaseAnchorBar="false">
+            <uxap:headerTitle>
+                <uxap:ObjectPageDynamicHeaderTitle >
+                    <uxap:expandedHeading>
+                        
+                        <Title text="{Colegio}" wrapping="true"></Title>
+                        
+                    </uxap:expandedHeading>
+                    <uxap:expandedContent>
+                        <Label text="{Descripcion}"></Label>
+                    </uxap:expandedContent>
+                    <uxap:snappedHeading>
+                        <FlexBox wrap="NoWrap" fitContainer="true" alignItems="Center" class="sapUiTinyMarginEnd">
+                            <Avatar src="https://w7.pngwing.com/pngs/27/14/png-transparent-school-education-college-academi-angle-class-logo-thumbnail.png" displaySize="S" displayShape="Square"></Avatar>
+                            <Title text="{Colegio}"></Title>
+                        </FlexBox>
+                    </uxap:snappedHeading>
+                    
+					
+                </uxap:ObjectPageDynamicHeaderTitle>
+            </uxap:headerTitle>
+            <uxap:headerContent>
+                <FlexBox wrap="Wrap" fitContainer="true" alignItems="Stretch">
+                    <VBox class="sapUiSmallMarginEnd">
+                        <Label text="Codigo"></Label>
+                        <Text text="{Codigo}"></Text>
+                    </VBox>
+                    <VBox class="sapUiSmallMarginEnd">
+                        <Label text="Estatus"></Label>
+                        <Text text="{Estatus}"></Text>
+                    </VBox>
+                    <VBox class="sapUiSmallMarginEnd">
+                        <Label text="Grupos"></Label>
+                        <Text text="{Grupos}"></Text>
+                    </VBox>
+                </FlexBox>
+            </uxap:headerContent>
+            <uxap:sections>
+                <uxap:ObjectPageSection title="Informacion de Fechas">
+                    <uxap:subSections>
+                        <uxap:ObjectPageSubSection >
+                            <uxap:blocks>
+                                <form:SimpleForm maxContainerCols="2"
+								editable="false"
+								layout="ResponsiveGridLayout"
+								labelSpanL="12"
+								labelSpanM="12"
+								emptySpanL="0"
+								emptySpanM="0"
+								columnsL="1"
+								columnsM="1">
+                                    <form:content>
+                                        <Label text="Fecha Plan" />
+                                        <Text text="{Fecha Plan}"></Text>
+                                        <Label text="Fecha" />
+                                        <Text text="{Fecha}"></Text>
+                                        <Label text="Fecha Cierre" />
+                                        <Text text="{Fecha Cierre}"></Text>
+                                        
+                                    </form:content>
+
+                                </form:SimpleForm>
+                            </uxap:blocks>
+                        </uxap:ObjectPageSubSection>
+                    </uxap:subSections>
+                </uxap:ObjectPageSection>
+            </uxap:sections>
+        </uxap:ObjectPageLayout>
+    
+    
+    </content>
+    
+    
+    
+    </Page>
+
+</mvc:View>

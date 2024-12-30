@@ -1,0 +1,136 @@
+<mvc:View xmlns:filterbar="sap.ui.comp.filterbar" xmlns:table="sap.ui.table" 
+controllerName="project2.controller.listasVisitas"
+xmlns="sap.m"
+xmlns:cards="sap.f.cards" 
+xmlns:f="sap.f"
+xmlns:tnt="sap.tnt"
+xmlns:mvc="sap.ui.core.mvc" 
+xmlns:core="sap.ui.core"
+>
+<Page title="Listas de Visitas" showNavButton="true" navButtonPress=".onRegresar" >
+    
+
+    <IconTabBar >
+        <items>
+            <IconTabFilter name="Crear Visitas" icon="sap-icon://clinical-task-tracker" >
+                <content>
+                <Panel headerText="Visitas">
+        <HBox >
+        <VBox class="box1" >
+            <Label text="Codigo:" class="sapUiTinyMarginTop"/>
+            <Input id="codigo" value="" width="95%"></Input>
+
+            <Label text="Descripcion:" class="sapUiTinyMarginTop"/>
+            <Input id="descripcion" value="" width="95%"></Input>
+
+            <Label  text="Estatus:" class="sapUiTinyMarginTop"></Label>
+            <ComboBox id="estatus" width="95%" items="{ path:'/Estatus' , sorter:{ path: 'text' }}" >
+                <core:Item key="{key}" text="{text}"/>
+            </ComboBox>
+
+            <Label text="Componente:" class="sapUiTinyMarginTop"/>
+            <ComboBox id="componente" width="95%" items="{ path:'/Componente' }" >
+                <core:Item key="{key}" text="{text}"/>
+            </ComboBox>
+            
+
+            <Label text="Grupos:" class="sapUiTinyMarginTop"/>
+            <ComboBox id="grupos" width="95%" items="{ path:'/Grupos' }" >
+                <core:Item key="{key}" text="{text}"/>
+            </ComboBox>
+           
+        </VBox>
+        <VBox class="box1">
+            <Label text="Colegio:" class="sapUiTinyMarginTop"/>
+            <ComboBox id="colegio" width="95%" items="{ path:'/Colegio' }" >
+                <core:Item key="{key}" text="{text}"/>
+            </ComboBox>
+            
+
+            <Label text="Fecha Plan:" class="sapUiTinyMarginTop"/>
+            <DatePicker id="fechaPlan" placeholder="Seleccione Fecha" width="95%"></DatePicker>
+            <Label text="Fecha:" class="sapUiTinyMarginTop"/>
+            <DatePicker id="fecha" placeholder="Seleccione Fecha" width="95%"></DatePicker>
+            <Label text="Fecha Cierre:" class="sapUiTinyMarginTop"/>
+            <DatePicker id="fechaCierre" placeholder="Seleccione Fecha" width="95%"></DatePicker>
+        </VBox>
+        
+        </HBox>
+        <HBox class="sapUiSmallMarginTop" justifyContent="Center" alignContent="Center">
+            <Button text="Guardar" class="sapUiSmallMargin" icon="sap-icon://save" press="onSubmit"></Button>
+            <Button text="Cancelar" class="sapUiSmallMargin" icon="sap-icon://sys-cancel-2" press="onclearInput"></Button>
+        
+        </HBox>
+        </Panel>
+        
+                </content>
+                
+            </IconTabFilter>
+            <IconTabFilter name="Listar Visitas" icon="sap-icon://visits">
+                <content>
+                <Panel >
+                   	<VBox >
+                        <Label text="Buscar Descripcion:" />
+                        <SearchField width="40%" search=".onSearch" value="" id="valueSearch" placeholder="Descripcion" />
+		            </VBox>
+                    <Table id="table" items="{/VisitasB}" mode="MultiSelect" selectionChange="onSelectionChange" >
+                    
+                    <headerToolbar>
+                        
+                        <OverflowToolbar >
+                            <Title
+							text="Listar Visitas ({= ${/VisitasB}.length})"
+							level="H2"
+                            
+						/>
+                           <ToolbarSpacer />
+                            <Button text="Detail" enabled="false" press="onDetail" id="onDetailButton"/>
+                        </OverflowToolbar>
+                    </headerToolbar>
+                        <columns>
+                            <Column id="Codigoid" importance="High">
+						<header>
+							<Label text="Codigo" />
+						</header>
+					</Column>
+					<Column id="Descripcionid">
+						<header>
+							<Label text="Descripcion" />
+						</header>
+					</Column>
+					<Column id="Estatusid">
+						<header>
+							<Label text="Estatus" />
+						</header>
+					</Column>
+					<Column id="Colegioid">
+						<header>
+							<Label text="Colegio" />
+						</header>
+					</Column>
+                        </columns>
+                        <items >
+                    <ColumnListItem  >
+                        <cells>
+                        <Text text="{Codigo}"></Text>
+                        <Text text="{Descripcion}"></Text>
+                        <Text text="{Estatus}"></Text>
+                        <Text text="{Colegio}"></Text>
+                        </cells>
+                    
+                    
+                    </ColumnListItem>
+                </items>
+                    </Table>
+                    </Panel>
+                </content>
+            </IconTabFilter>
+        </items>
+    
+    </IconTabBar>
+
+</Page>
+    
+
+
+</mvc:View>

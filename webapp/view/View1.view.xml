@@ -1,0 +1,68 @@
+<mvc:View xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards" xmlns:f="sap.f"   xmlns:core="sap.ui.core" controllerName="project2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <HBox >
+        <VBox class="sapUiSmallMargin" >
+            <GenericTile header="Colegios" > 
+            <TileContent unit="Total" >
+                <content>
+                  <NumericContent value="755" icon="sap-icon://building"  >
+                    
+                  </NumericContent>
+                    
+                </content>
+            </TileContent>
+                
+            </GenericTile>
+            
+            
+        </VBox>
+         <VBox class="sapUiSmallMargin" >
+            <GenericTile header="CheckList" > 
+            <TileContent unit="Total" >
+                <content>
+                  <NumericContent value="347" icon="sap-icon://clinical-task-tracker"  >
+                    
+                  </NumericContent>
+                    
+                </content>
+            </TileContent>
+                
+            </GenericTile>
+            
+            
+        </VBox>
+        <VBox class="sapUiSmallMargin" >
+            <GenericTile header="Visitas" press=".onVisitasPress" > 
+            <TileContent unit="Total" >
+                <content>
+                  <NumericContent value="2" icon="sap-icon://visits"  >
+                    
+                  </NumericContent>
+                    
+                </content>
+            </TileContent>
+                
+            </GenericTile>
+            
+            
+        </VBox>
+        <VBox class="sapUiSmallMargin" >
+            <GenericTile header="Grupos" > 
+            <TileContent unit="Total" >
+                <content>
+                  <NumericContent value="2" icon="sap-icon://menu"  >
+                    
+                  </NumericContent>
+                    
+                </content>
+            </TileContent>
+                
+            </GenericTile>
+            
+            
+        </VBox>
+        </HBox>
+    </Page>
+</mvc:View>
